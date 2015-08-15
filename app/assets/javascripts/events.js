@@ -11,6 +11,8 @@ $(document).ready(function() {
       events: {
       	url: 'getevents',
       	type: 'GET',
+      	color: 'lightblue',   // an option!
+    	textColor: 'white'
       }
       
     });
