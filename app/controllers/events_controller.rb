@@ -7,6 +7,10 @@ class EventsController < ApplicationController
     @events = Event.all
   end
 
+  def getevents
+    @events = Event.all
+    render json: @events
+  end
   # GET /events/1
   # GET /events/1.json
   def show
@@ -50,6 +54,7 @@ class EventsController < ApplicationController
       end
     end
   end
+
 
   # DELETE /events/1
   # DELETE /events/1.json
